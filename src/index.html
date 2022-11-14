@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="icon" href="data:image/x-icon;,">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Awesome Pagination</title>
+</head>
+<body>
+<main id="app">
+    <form class="paginationController" id="paginationController" autocomplete="off">
+        <label class="paginationController__label">
+            <span>Total length: </span>
+            <span><input size="5" type="number" name="total-length" placeholder="100" value="100"></span>
+        </label>
+        <label class="paginationController__label">
+            <span>Current page: </span>
+            <span><input size="5" type="number" name="current-page" placeholder="1" value="1"></span>
+        </label>
+        <label class="paginationController__label">
+            <span>Limit: </span>
+            <span><input size="5" type="number" name="limit" placeholder="10" value="10"></span>
+        </label>
+        <button type="submit">Preview pagination</button>
+    </form>
+
+    <pagination-type1 total-length="100" current-page="1" limit="10"></pagination-type1>
+
+</main>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
